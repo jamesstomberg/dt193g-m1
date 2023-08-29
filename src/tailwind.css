@@ -1,0 +1,19 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-pancake {
+    @apply h-screen flex flex-col text-center font-sora;
+}
+
+.menu-item {
+    @apply py-2 text-xl hover:text-red-500 transition ease-out duration-300;
+}
+
+.absolute-50 {
+    @apply absolute top-1/2 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 left-2 right-2;
+}

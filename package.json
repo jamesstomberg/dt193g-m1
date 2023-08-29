@@ -1,0 +1,16 @@
+{
+  "name": "moment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-tw": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/tailwind.css --minify",
+    "watch-tw": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

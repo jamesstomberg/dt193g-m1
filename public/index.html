@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1 CSS Ramverk - Start</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body class="body-pancake">
+
+    <header>
+        <div class="flex justify-between items-center p-2 max-w-5xl mx-auto">
+            <button id="menuButton" class="md:order-2 cursor-pointer transition ease duration-100">
+                <svg class="w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
+            </button>
+            <a href="index.html" id="siteLogo" class="flex items-center menu-item hover:scale-90">
+                <svg class="w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                </svg>
+                <span class="pl-2 hidden md:block">Moment 1 - CSS-ramverk</span>
+            </a>
+        </div>
+        <nav id="navMenu" class="hidden transition bg-gray-600 text-gray-100 flex justify-start pl-6 md:justify-center absolute left-0 right-0 z-10">
+            <ul>
+                <li class="menu-item"><a href="index.html">Start</a></li>
+                <li class="menu-item"><a href="index.html">Tailwind</a></li>
+                <li class="menu-item"><a href="index.html">Bulma</a></li>
+                <li class="menu-item"><a href="index.html">Platform</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-1">
+        <div class="relative w-full h-full">
+            <img src="img/simon-berger-twukN12EN7c-unsplash.jpg" alt="Dekorativ bild" class="object-cover w-full h-full">
+            <div class="absolute-50 bg-gray-500 text-white bg-opacity-70 p-10 rounded-sm shadow-lg">
+                <h1 class="text-4xl mb-3">
+                    Test av CSS-ramverk
+                </h1>
+                <p>
+                    Välkommen till Moment 1 i kursen Fullstack-utveckling med ramverk.
+                </p>
+                <p class="mt-3 font-semibold">
+                    Syftet med denna del av kursen är att:
+                </p>
+                <ul class="mb-2 mt-1 text-left border p-2">
+                    <li class="py-1"><p>- Testa olika CSS-ramverk.</p></li>
+                    <li class="py-1"><p>- Skapa en mindre webbplats med hjälp av dessa ramverk.</p></li>
+                    <li class="py-1"><p>- Automatisera publiceringsprocessen från lokal utvecklingsmiljö till publik webbhost.</p></li>
+                </ul>
+                <p class="text-lg">Jag har valt att använda <a class="underline" href="#">Tailwind</a> och <a class="underline" href="#">Bulma</a>.</p>
+                <p class="text-sm pt-5">Ikoner har jag hämtat från <a class="underline" href="https://heroicons.com/" target="_blank">Heroicons</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="flex justify-center items-center p-4 bg-gray-600 text-gray-100">
+        <div class="flex-col justify-center gap-12">
+            <p>
+                <span>
+                    <svg class="w-12 mx-auto"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                    </svg>
+                </span>
+                James Stomberg
+            </p>
+            <p>DT193G - Moment 1 - CSS-ramverk</p>
+            <a class="menu-item" href="mailto:jast2202@student.miun.se">Maila</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
