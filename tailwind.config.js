@@ -7,6 +7,8 @@ module.exports = {
       'sora': ['Sora'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 

@@ -34,7 +34,7 @@
                 <li class="menu-item"><a href="index.html">Start</a></li>
                 <li class="menu-item"><a href="tailwind.html">Tailwind</a></li>
                 <li class="menu-item"><a href="bulma.html">Bulma</a></li>
-                <li class="menu-item"><a href="platform.html">Platform</a></li>
+                <li class="menu-item"><a href="platform.html">Plattform</a></li>
             </ul>
         </nav>
     </header>
@@ -90,9 +90,12 @@
                                 <p>
                                     Ett exempel i mitt fall är där jag skapat en egen klass som heter ".body-pancake", vilken i sin tur anger
                                     Tailwind-klasserna "h-screen flex flex-col text-center font-sora" där den används. Jag behöver alltså bara
-                                    skriva body-pancake på en klass (i denna webbplats fall på "body"-elementet) för att den ska få alla
-                                    Tailwind-klasser.
+                                    skriva body-pancake på ett element (i denna webbplats fall på "body"-elementet) för att den ska få alla
+                                    dessa Tailwind-klasser.
                                 </p>
+                            </li>
+                            <li>
+                                <p>Det finns ett jättebra tillägg i VS Code för Tailwind, "Tailwind CSS IntelliSense"</p>
                             </li>
                         </ul>
                     </div>
@@ -100,20 +103,103 @@
                         <h3 class="text-xl my-2">James åsikt</h3>
                         <p class="p-1">
                             Jag har egentligen inget negativt att säga om ramverket. 
-                            Det är enkelt att sätta upp och förstå sig på och har en bra dokumentation.
+                            Det är enkelt att sätta upp och förstå sig på samt har en bra dokumentation.
                             Jag tror definitivt att Tailwind är ett tillräckligt bra ramverk både för företag i storlek
                             "startup" och "enterprise".
                             Den stora utmaningen med Tailwind är att lära sig allt man kan göra med det!
-                            Jag lär med stor sannolikhet använda Tailwind under mitt projekt.
+                            Jag kommer med stor sannolikhet att använda Tailwind under mitt projekt.
                         </p>
+                        <div class="my-4">
+                            <a  class="menu-item bg-gray-100 rounded text-red-500 border-2 p-2" href="https://tailwindcss.com/docs/installation" target="_blank">Dokumentation för Tailwind</a>
+                        </div>
                     </section>
 
-                    <section>
-                        <h3 class="text-xl my-2">Tabell</h3>
+                    <section class="mx-auto my-4 border-t-2 border-b-2">
+                        <h3 class="text-xl my-4">Tabell</h3>
+                        <table class="table-fixed mx-auto text-left border-collapse w-full max-w-4xl rounded-md my-2">
+                            <thead class="bg-gray-100 border">
+                              <tr>
+                                <th class="p-2 border">Förnamn</th>
+                                <th class="p-2 border">Efternamn</th>
+                                <th class="p-2 border hidden md:table-cell">Född</th>
+                                <th class="p-2 border">Känd för</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="border p-2">Grace</td>
+                                <td class="border p-2">Hopper</td>
+                                <td class="border p-2 hidden md:table-cell">1906</td>
+                                <td class="border p-2">COBOL</td>
+                              </tr>
+                              <tr>
+                                <td class="border p-2">Taylor</td>
+                                <td class="border p-2">Otwell</td>
+                                <td class="border p-2 hidden md:table-cell">1990</td>
+                                <td class="border p-2">Laravel</td>
+                              </tr>
+                              <tr>
+                                <td class="border p-2">David</td>
+                                <td class="border p-2">Heinemeier Hansson</td>
+                                <td class="border p-2 hidden md:table-cell">1979</td>
+                                <td class="border p-2">Ruby on Rails</td>
+                              </tr>
+                              <tr>
+                                <td class="border p-2">Linus</td>
+                                <td class="border p-2">Torvalds</td>
+                                <td class="border p-2 hidden md:table-cell">1969</td>
+                                <td class="border p-2">Linux</td>
+                              </tr>
+                              <tr>
+                                <td class="border p-2">Rasmus</td>
+                                <td class="border p-2">Lerdorf</td>
+                                <td class="border p-2 hidden md:table-cell">1968</td>
+                                <td class="border p-2">PHP</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </section>
 
-                    <section>
-                        <h3 class="text-xl my-2">Formulär</h3>
+                    <section class="my-4">
+                        <h3 class="text-xl my-4">Formulär</h3>
+                        <form action="tailwind.html" class="max-w-xl mx-auto text-left border shadow-lg p-4 space-y-6">
+                            <p>
+                                <fieldset class="flex flex-col space-y-2">
+                                    <label for="name">Namn</label>
+                                    <input type="text" name="name" id="name" class="rounded">
+                                </fieldset>
+                            </p>
+                            <p>
+                                <fieldset class="flex flex-col space-y-2">
+                                    <label for="favorite">Välj favorit</label>
+                                    <select name="favorite" id="favorite" class="rounded">
+                                        <option value="0"></option>
+                                        <option value="1">COBOL</option>
+                                        <option value="2">Laravel</option>
+                                        <option value="3">Ruby on Rails</option>
+                                        <option value="4">Linux</option>
+                                        <option value="5">PHP</option>
+                                    </select>
+                                </fieldset>
+                            </p>
+                            <p>
+                                <fieldset class="flex flex-col space-y-2">
+                                    <label for="motivation">Motivering</label>
+                                    <textarea name="motivation" id="motivation" cols="30" rows="3" class="rounded"></textarea>
+                                </fieldset>
+                            </p>
+                            <p>
+                                <fieldset class="flex gap-2 justify-center items-center">
+                                    <input type="checkbox" name="gdpr" id="gdpr" class="rounded">
+                                    <label for="gdpr" class="mt-0">Ja, jag godkänner att mina uppgifter lagras.</label>
+                                </fieldset>
+                            </p>
+                            <p>
+                                <fieldset class="flex flex-col space-y-2">
+                                    <input type="submit" value="Skicka" class="rounded p-3 bg-gray-900 hover:bg-gray-700 hover:cursor-pointer text-gray-100 max-w-sm mx-auto">
+                                </fieldset>
+                            </p>
+                        </form>
                     </section>
                 </div>
             </section>
