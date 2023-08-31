@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 1 CSS Ramverk - Bulma</title>
     <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/bulma.css">
     <script src="js/index.js" defer></script>
 </head>
 
@@ -29,7 +30,7 @@
             </a>
         </div>
         <nav id="navMenu"
-            class="hidden transition bg-gray-600 text-gray-100 flex justify-start pl-6 md:justify-center absolute left-0 right-0 z-10">
+            class="hidden transition bg-gray-100 text-gray-100 flex justify-start pl-6 md:justify-center absolute left-0 right-0 z-10">
             <ul>
                 <li class="menu-item"><a href="index.html">Start</a></li>
                 <li class="menu-item"><a href="tailwind.html">Tailwind</a></li>
@@ -39,11 +40,160 @@
         </nav>
     </header>
 
-    <main class="flex-1">
-        Bulma
+    <main class="flex-1 border-t-2 border-b-2">
+        <section class="container text-left content section">
+            <h1 class="title is-1">Bulma</h1>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <p>Bulma är ett modulärt uppbyggt CSS-ramverk som även stödjer SASS.</p>
+                    </li>
+                    <li>
+                        <p>Bulma går att använda på några olika sätt.</p>
+                    </li>
+                    <li>
+                        <p>Det enklaste för att komma igång snabbt om man vill använda vanlig CSS är via CDN.</p>
+                    </li>
+                    <li>
+                        <p>Man kan även ladda ner hela biblioteket från GitHub.</p>
+                    </li>
+                    <li>
+                        <p>Spontant gillade jag inte Bulma lika mycket som Tailwind.</p>
+                    </li>
+                    <li>
+                        <p>Skulle säga att det är användarvänligt, men dokumentationen upplevde jag som något rörigare.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Största skillnaden jämfört med Tailwind är att Bulma i större utsträckning är uppbyggt av
+                            färdiga
+                            komponenter.</p>
+                    </li>
+                    <li>
+                        <p>Tailwind använder mer "low-level-classes".</p>
+                    </li>
+                    <li>
+                        <p>Detta gör förvisso utvecklingsprocessen snabbare med Bulma, men man har mindre valmöjligheter
+                            och
+                            jag upplever att det är lättare att skapa ett eget och mer unikt utseende med Tailwind.</p>
+                    </li>
+                </ul>
+
+                <div class="content">
+                    <a class="button is-danger" href="https://bulma.io/documentation/" target="_blank">Dokumentation för Bulma</a>
+                </div>
+            </div>
+
+            <section class="container is-max-desktop section">
+                <h2 class="title is-2">Tabell</h2>
+
+                <div class="content">
+                    <table class="table is-bordered">
+                        <thead>
+                            <tr class="is-selected">
+                                <th>Art.nr.</th>
+                                <th>Benämning</th>
+                                <th>Kategori</th>
+                                <th>Enhet</th>
+                                <th>Pris</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td>Kalasballonger</td>
+                                <td>Tillställningar</td>
+                                <td>förp</td>
+                                <td>99 kr</td>
+                            </tr>
+                            <tr>
+                                <td>585845</td>
+                                <td>Tomtebloss</td>
+                                <td>Julfirande</td>
+                                <td>förp</td>
+                                <td>10 kr</td>
+                            </tr>
+                            <tr>
+                                <td>454785</td>
+                                <td>Raketer</td>
+                                <td>Nyårsfirande</td>
+                                <td>st</td>
+                                <td>53 kr</td>
+                            </tr>
+                            <tr>
+                                <td>456452</td>
+                                <td>Kakor</td>
+                                <td>Kalas</td>
+                                <td>förp</td>
+                                <td>120 kr</td>
+                            </tr>
+                            <tr>
+                                <td>56342</td>
+                                <td>Beer Pong</td>
+                                <td>Underhållning</td>
+                                <td>st</td>
+                                <td>400 kr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="container is-max-desktop section">
+                <h2 class="title is-2">Formulär</h2>
+                <form action="bulma.html">
+                    <fieldset class="field">
+                        <label class="label" for="name">Namn</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Ditt namn" id="name">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <label class="label" for="selections">Välj produkt</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="selections">
+                                    <option></option>
+                                    <option value="1234">1234 - Kalasballonger</option>
+                                    <option value="585845">585845 - Tomtebloss</option>
+                                    <option value="454785">454785 - Raketer</option>
+                                    <option value="456452">456452 - Kakor</option>
+                                    <option value="56342">56342 - Beer Pong</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <label class="label" for="message">Meddelande</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Ditt meddelande" id="message"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <div class="control">
+                            <label class="checkbox" for="gdpr">
+                                <input type="checkbox" id="gdpr">
+                                Jag godkänner <a href="bulma.html">villkoren</a>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <div class="control">
+                            <input type="submit" class="button is-link" value="Beställ">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+
     </main>
 
-    <footer class="flex justify-center items-center p-4 bg-gray-600 text-gray-100">
+    <footer class="flex justify-center items-center p-4 bg-gray-200">
         <div class="flex-col justify-center gap-12">
             <p>
                 <span>
